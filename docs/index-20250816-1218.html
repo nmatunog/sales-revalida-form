@@ -79,66 +79,6 @@
             font-size: 14px;
         }
     }
-/* Date field fix */
-input[type="date"] {
-    font-size: 16px !important; /* Prevent zoom on focus */
-    min-height: 44px; /* Minimum touch target size */
-}
-
-/* Make form more compact and readable on mobile */
-@media (max-width: 768px) {
-    /* Increase base font size */
-    body {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    /* Make table cells more compact */
-    td, th {
-        padding: 6px 3px !important;
-        font-size: 14px !important;
-    }
-
-    /* Make radio buttons larger */
-    input[type="radio"] {
-        transform: scale(1.3);
-        margin: 0 5px;
-    }
-
-    /* Adjust section headers */
-    .bg-pink-50 {
-        padding: 8px 4px !important;
-    }
-
-    /* Make form fields more touch-friendly */
-    input, select, textarea {
-        font-size: 16px !important;
-        min-height: 44px !important;
-    }
-
-    /* Fix date field on mobile */
-    input[type="date"]:before {
-        content: attr(placeholder) !important;
-        color: #6b7280;
-        margin-right: 0.5em;
-    }
-    input[type="date"]:focus:before,
-    input[type="date"]:valid:before {
-        content: "" !important;
-    }
-}
-
-/* Ensure form is never wider than screen */
-.printable-area {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Better text wrapping */
-td {
-    word-break: break-word;
-    max-width: 200px;
-}
   </style>
 
 </head>
