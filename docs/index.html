@@ -178,6 +178,15 @@ td {
     word-break: break-word;
     max-width: 200px;
 }
+/* Specific fix for INTRODUCTION cell */
+#intro-cell {
+    white-space: normal !important;
+    word-break: break-word !important;
+    min-width: 120px !important;
+    max-width: 150px !important;
+    padding: 8px !important;
+    line-height: 1.3 !important;
+}
   </style>
 
 </head>
@@ -271,7 +280,7 @@ td {
                         <td class="px-4 py-3 font-semibold text-pink-800" colspan="6">Client Meeting</td>
                     </tr>
                     <tr>
-                        <td class="px-4 py-3 align-top font-medium text-gray-900">INTRODUCTION</td>
+                        <td id="intro-cell" class="px-4 py-3 align-top font-medium text-gray-900">INTRODUCTION</td>
                         <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to introduce AIA Philipines</td>
                         <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
                         <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
