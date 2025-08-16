@@ -39,6 +39,24 @@
             padding: 5px;
             font-size: 14px;
         }
+/* Fix first column text wrapping */
+td:first-child {
+    min-width: 100px !important;
+    max-width: 150px !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+/* Ensure table cells have proper spacing */
+td {
+    padding: 8px 4px !important;
+}
+
+/* Make sure the table takes full width */
+table {
+    table-layout: fixed;
+    width: 100% !important;
+}
         .printable-area {
             padding: 5px !important;
             margin: 0;
