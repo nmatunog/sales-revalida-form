@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Process Revalida Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .outcome-labels th {
+            font-size: 0.65rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .printable-area {
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-6 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-lg printable-area">
+
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8 border-b pb-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">Sales Process Revalida Form</h1>
+                <p class="text-sm text-gray-500">1Matunog District</p>
+            </div>
+            <img src="https://placehold.co/100x50/f5f5f5/db2777?text=1CMA&font=raleway" alt="1CMA Logo" class="h-12" onerror="this.onerror=null;this.src='https://placehold.co/100x50/f5f5f5/cccccc?text=Logo';">
+        </header>
+
+        <!-- Advisor and Leader Info -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div>
+                <label for="advisorName" class="block text-sm font-medium text-gray-700 mb-1">Advisor Name:</label>
+                <input type="text" id="advisorName" name="advisorName" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+            </div>
+            <div>
+                <label for="leaderName" class="block text-sm font-medium text-gray-700 mb-1">Leader Name:</label>
+                <input type="text" id="leaderName" name="leaderName" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+            </div>
+        </div>
+
+        <!-- Main Form Table -->
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 border">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/6">Sales Process</th>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-2/6">Outcome</th>
+                        <th scope="col" class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider" colspan="3">Was the outcome met?</th>
+                        <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-2/6">Feedback/Remarks</th>
+                    </tr>
+                    <tr class="bg-gray-50 outcome-labels">
+                        <th></th>
+                        <th></th>
+                        <th class="font-medium text-gray-600">Yes</th>
+                        <th class="font-medium text-gray-600">No</th>
+                        <th class="font-medium text-gray-600">Partial</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Section: Telephone Approach to Warm Market -->
+                    <tr class="bg-pink-50">
+                        <td class="px-4 py-3 font-semibold text-pink-800" colspan="6">Telephone Approach to Warm Market</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900" rowspan="5"></td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor greeted the prospect in a friendly and energetic manner</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to introduce himself/herself as an AIA PH life planner</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to explain the purpose and value of the call/meeting</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to give options as to the meeting's date, time, and venue</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to handle objections, if any</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome1_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+
+                    <!-- Section: Client Meeting -->
+                    <tr class="bg-pink-50">
+                        <td class="px-4 py-3 font-semibold text-pink-800" colspan="6">Client Meeting</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900">INTRODUCTION</td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to introduce 1Matunog District</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900">BUILD RAPPORT</td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to establish rapport to make the prospect comfortable</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                     <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900">LINK TO BUSINESS</td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to smoothly transition from rapport building to the purpose of the meeting</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                     <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900">KYC</td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to ask questions to uncover the potential needs of the prospect by using the Setting Your Goals and Financial Needs Analysis forms</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="3"></textarea></td>
+                    </tr>
+                    <!-- Solution Presentation - Broken Down -->
+                    <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900" rowspan="3">SOLUTION PRESENTATION</td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to recommend product/s suited for the uncovered needs of the prospect</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to generate a proposal based on the product recommendation</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to clearly explain the features of the product and connect it to the needs of the prospect (Life insurance, riders, benefits, Vitality, premium)</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_5_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <!-- Closing - Broken Down -->
+                    <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900" rowspan="5">CLOSING</td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor attempted to close the sale</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">[If yes] Advisor was able to help the prospect accomplish the E-App</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">[If yes] Advisor was able to help the prospect determine the most convenient mode of payment</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to ask for referrals</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to handle objections</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome2_6_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    
+                    <!-- Section: Telephone Approach to Referrals -->
+                    <tr class="bg-pink-50">
+                        <td class="px-4 py-3 font-semibold text-pink-800" colspan="6">Telephone Approach to Referrals</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 align-top font-medium text-gray-900" rowspan="6"></td>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor greeted the prospect in a friendly and energetic manner</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_1" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to introduce himself/herself as an AIA PH life planner</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_2" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to mention the name of the referrer</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_3" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to explain the purpose and value of the call/meeting</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_4" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to give options as to the meeting's date, time, and venue</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_5" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-sm text-gray-600 align-top">Advisor was able to handle objections, if any</td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_6" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_6" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-2 py-3 text-center align-middle"><input type="radio" name="outcome3_6" class="h-4 w-4 text-pink-600 border-gray-300 focus:ring-pink-500"></td>
+                        <td class="px-4 py-3 align-top"><textarea class="w-full p-2 border border-gray-300 rounded-md text-sm" rows="2"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Overall Summary -->
+        <div class="mt-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Overall Summary</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="strengths" class="block text-sm font-medium text-gray-700 mb-1">Advisor's Strengths</label>
+                    <textarea id="strengths" name="strengths" rows="5" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea>
+                </div>
+                <div>
+                    <label for="improvements" class="block text-sm font-medium text-gray-700 mb-1">Advisor's Areas for Improvement</label>
+                    <textarea id="improvements" name="improvements" rows="5" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea>
+                </div>
+                <div class="md:col-span-2">
+                    <label for="actionPlan" class="block text-sm font-medium text-gray-700 mb-1">Leader & Advisor Action Plan</label>
+                    <textarea id="actionPlan" name="actionPlan" rows="5" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signature and Date -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 border-t pt-6">
+            <div>
+                <label for="advisorSignature" class="block text-sm font-medium text-gray-700 mb-1">Advisor's Signature Over Printed Name</label>
+                <input type="text" id="advisorSignature" name="advisorSignature" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+            </div>
+            <div>
+                <label for="leaderSignature" class="block text-sm font-medium text-gray-700 mb-1">Leader's Signature Over Printed Name</label>
+                <input type="text" id="leaderSignature" name="leaderSignature" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+            </div>
+            <div>
+                <label for="revalidaDate" class="block text-sm font-medium text-gray-700 mb-1">Date of Revalida/JFW</label>
+                <input type="date" id="revalidaDate" name="revalidaDate" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-10 text-right space-x-3 no-print">
+            <button type="button" onclick="resetForm()" class="px-6 py-2 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition duration-150">
+                Reset
+            </button>
+            <button type="button" onclick="window.print()" class="px-6 py-2 bg-pink-600 text-white font-semibold rounded-lg shadow-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 transition duration-150">
+                Print / Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Function to reset the form
+        function resetForm() {
+            // Reset all input fields
+            const inputs = document.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                if (input.type === 'radio' || input.type === 'checkbox') {
+                    input.checked = false;
+                } else {
+                    input.value = '';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
