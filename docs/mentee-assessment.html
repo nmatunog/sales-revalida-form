@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1CMA Rookie Academy Post Assessment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .printable-area {
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+        /* Custom styles for range slider */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            background: #d1d5db; /* gray-300 */
+            border-radius: 5px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #3b82f6; /* blue-500 */
+            cursor: pointer;
+            margin-top: -6px; /* You need to specify a margin in Chrome, but not in Firefox */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-6 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-lg printable-area">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8 border-b pb-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">1CMA Rookie Academy Post Assessment</h1>
+                <p class="text-sm text-gray-500">Mentee Feedback and Performance Review</p>
+            </div>
+             <img src="https://placehold.co/100x50/e0e7ff/dc2626?text=1CMA&font=raleway" alt="Rookie Academy Logo" class="h-12" onerror="this.onerror=null;this.src='https://placehold.co/100x50/f5f5f5/cccccc?text=Logo';">
+        </header>
+
+        <!-- Name and Leader Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div>
+                <label for="menteeName" class="block text-sm font-medium text-gray-700 mb-1">Name:</label>
+                <input type="text" id="menteeName" name="menteeName" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="mentorName" class="block text-sm font-medium text-gray-700 mb-1">Leader Name:</label>
+                <input type="text" id="mentorName" name="mentorName" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="assessmentDate" class="block text-sm font-medium text-gray-700 mb-1">Date of Assessment:</label>
+                <input type="date" id="assessmentDate" name="assessmentDate" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+        </div>
+        
+        <!-- Performance Metrics Section -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Performance Since Rookie Academy Start</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div>
+                    <label for="leadsGenerated" class="block text-sm font-medium text-gray-700 mb-1">Leads Generated</label>
+                    <input type="number" id="leadsGenerated" name="leadsGenerated" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="presentations" class="block text-sm font-medium text-gray-700 mb-1">Presentations</label>
+                    <input type="number" id="presentations" name="presentations" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="jfw" class="block text-sm font-medium text-gray-700 mb-1">Joint Field Work</label>
+                    <input type="number" id="jfw" name="jfw" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="selfClosed" class="block text-sm font-medium text-gray-700 mb-1">Self-Closed Sales</label>
+                    <input type="number" id="selfClosed" name="selfClosed" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="submissions" class="block text-sm font-medium text-gray-700 mb-1">Case Submissions</label>
+                    <input type="number" id="submissions" name="submissions" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="approved" class="block text-sm font-medium text-gray-700 mb-1">Cases Approved</label>
+                    <input type="number" id="approved" name="approved" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="col-span-2">
+                    <label for="totalAnp" class="block text-sm font-medium text-gray-700 mb-1">Total ANP from Approved Policies</label>
+                    <div class="relative">
+                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                            <span class="text-gray-500 sm:text-sm">₱</span>
+                        </div>
+                        <input type="number" id="totalAnp" name="totalAnp" class="w-full p-2 pl-7 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="0.00">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qualitative Feedback Section -->
+        <div>
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Self-Assessment & Feedback</h2>
+            <div class="space-y-6">
+                <div>
+                    <label for="selfRating" class="block text-sm font-medium text-gray-700 mb-2">As a mentee, how would you rate your overall skills and confidence? (1 = Low, 10 = High)</label>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm font-bold text-gray-600">1</span>
+                        <input type="range" id="selfRating" name="selfRating" min="1" max="10" value="5" class="w-full" oninput="updateRatingValue(this.value)">
+                        <span class="text-sm font-bold text-gray-600">10</span>
+                        <span id="ratingValue" class="font-bold text-blue-600 w-8 text-center bg-blue-100 rounded-md py-1">5</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="bestSkills" class="block text-sm font-medium text-gray-700 mb-1">In terms of skills, what are you best at?</label>
+                    <textarea id="bestSkills" name="bestSkills" rows="4" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+
+                <div>
+                    <label for="leaderSupport" class="block text-sm font-medium text-gray-700 mb-1">In what area do you need support from your leader?</label>
+                    <textarea id="leaderSupport" name="leaderSupport" rows="4" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                
+                <div>
+                    <label for="academyImprovement" class="block text-sm font-medium text-gray-700 mb-1">How can we improve the Rookie Academy so that both the mentee and mentor can improve?</label>
+                    <textarea id="academyImprovement" name="academyImprovement" rows="4" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                
+                <div>
+                    <label for="mentorImprovement" class="block text-sm font-medium text-gray-700 mb-1">In what area do the mentors or leaders need improvement?</label>
+                    <textarea id="mentorImprovement" name="mentorImprovement" rows="4" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-10 text-right space-x-3 no-print border-t pt-6">
+            <button type="button" onclick="resetForm()" class="px-6 py-2 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition duration-150">
+                Reset
+            </button>
+            <button type="button" onclick="window.print()" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
+                Print / Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function resetForm() {
+            document.querySelectorAll('input, textarea').forEach(input => {
+                if (input.type === 'radio' || input.type === 'checkbox') {
+                    input.checked = false;
+                } else if (input.type === 'range') {
+                    input.value = 5;
+                    updateRatingValue(5);
+                }
+                else {
+                    input.value = '';
+                }
+            });
+        }
+
+        function updateRatingValue(val) {
+            document.getElementById('ratingValue').textContent = val;
+        }
+
+        // Set initial date
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dateInput = document.getElementById('assessmentDate');
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            dateInput.value = `${year}-${month}-${day}`;
+
+            // Initialize rating value display
+            updateRatingValue(document.getElementById('selfRating').value);
+        });
+    </script>
+</body>
+</html>
